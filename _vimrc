@@ -65,10 +65,17 @@ set foldlevel=99
 " 不可见字符 尾部空格用点表示，其余空格不显示
 set listchars=trail:.,tab:>-,eol:$
 set nolist
-:noremap ,i :set list!<CR>
+noremap ,i :set list!<CR>
 
-" 自定义快捷键
+" 进入normal状态
 inoremap jj <ESC>
+
+" 窗口切换
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
 
 filetype plugin indent on
 
